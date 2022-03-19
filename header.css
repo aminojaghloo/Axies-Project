@@ -1,0 +1,116 @@
+#header{
+    min-height: 40%;
+    top: 0;
+    position: sticky;
+    background: rgb(20,20,31);
+    background: linear-gradient(90deg, rgba(20,20,31,1) 0%, rgba(33,22,45,1) 100%) no-repeat fixed center;
+    z-index: 1;
+}
+
+.searchbox{
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 1rem 1.5rem;
+    color: var(--light-color);
+}
+.nav__item--searchbox{
+    background-color:rgb(52, 52, 68, 0.6);
+    border-radius: 1.5rem;
+    display: inline-block;
+}
+.nav__item--searchbox i{
+    padding: 1rem 2rem ;
+    color: var(--light-color);
+    cursor: pointer;
+    
+}
+.nav__lists{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+.nav__item--menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.nav__item--menu li{
+  margin-left: 1.5rem;
+}
+.nav__item--menu a{
+    font-weight: 700;
+}
+.nav__item--searchbox{
+    margin-right: 0.8rem;
+}
+.nav__wrapper{
+    border-bottom: rgba(122, 122, 122, 0.404) 1px solid;
+    height: 4.5rem;
+}
+input{
+    font-family: inherit;
+}
+.nav__item--darkmode{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav__item--darkmode img {
+    margin: 0 1rem;
+
+}
+.active__theme{
+    background-color: rgb(52, 52, 68, 0.6);
+    border-radius: 1.2rem;
+}
+
+.dark__theme
+{
+
+    padding: 0.8rem 0;
+}
+.light__theme{
+    padding: 0.8rem 0;
+}
+.nav__list{
+    position: relative;
+ }
+
+ 
+.drop__down{
+    position: absolute;
+    display: flex;
+    flex-direction: column !important;
+    background-color: var(--primary-color);
+    border-radius: 0.2rem;
+    visibility: hidden;
+
+    
+}
+.drop__down li{
+    margin: 0.5rem 0;
+
+
+}
+.drop__down a{
+    color: var(--light-color); 
+    padding-left: 0.5rem;
+    padding-right: 5rem;
+
+}
+
+.drop__down a:hover{
+    color: var(--dark-color);
+    transition: all 0.3s ease-in-out;
+}
+.nav__list:hover .drop__down{
+    visibility: visible;
+
+}
