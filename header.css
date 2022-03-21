@@ -25,11 +25,13 @@
     cursor: pointer;
     
 }
+
 .nav__lists{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+
 
 }
 
@@ -51,7 +53,7 @@
 }
 .nav__wrapper{
     border-bottom: rgba(122, 122, 122, 0.404) 1px solid;
-    height: 4.5rem;
+    padding: 1rem 0;
 }
 input{
     font-family: inherit;
